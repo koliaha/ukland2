@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.woff") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.woff") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+:root {
+  --document-font-family: "Montserrat" sans-serif;
+}
+input {
+  outline: none;
+}
+.btn {
+  padding: 12px 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
+  background: #94c050 !important;
+  border-radius: 11px;
+}
+.btn.btn2 {
+  border: 1px solid #4b4e57;
+  background: none !important;
+  color: black;
+}
+.btn:disabled {
+  background: #a3a3a3 !important;
+}
+.input-form {
+  width: 100%;
+  background: #e4ebf3;
+  border-radius: 5px;
+  padding: 17px;
+  margin: 15px 0 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+.input-auth {
+  background: none;
+  padding: 5px 10px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+.auth-phone {
+  width: 111px;
+  border-right: 1px solid rgb(236, 236, 236);
+}
+.loader {
+  width: 100%;
+  height: 4.8px;
+  display: inline-block;
+  position: relative;
+  background: #d9d9d9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.loader::after {
+  content: "";
+  width: 192px;
+  height: 4.8px;
+  background: #94c050;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  animation: animloader 2s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    left: 100%;
+    transform: translateX(0%);
+  }
+}
+.boxShadow {
+  background: #ffffff;
+  box-shadow: 3px 2px 15px rgba(0, 0, 0, 0.08);
+}
+.boxShadow2 {
+  background: #ffffff;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.08);
+}
+.boxShadow3 {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+}
+.boxShadow4 {
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.12);
+}
+.currencySelected{
+  background:#94c050;
+  color:white;
+}
